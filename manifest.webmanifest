@@ -1,7 +1,7 @@
 {
-  "name": "BEFORE — Make the time fit",
-  "short_name": "BEFORE",
-  "description": "A deadline rescue tool that finds the best order for what needs to happen next.",
+  "name": "Taskchemy — Turn task chaos into time",
+  "short_name": "Taskchemy",
+  "description": "A deadline rescue app that turns task chaos into the smartest possible plan for the time you have.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
