@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#171717">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="BEFORE">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<title>BEFORE — Make the time fit</title>
+<style>
+:root{--bg:#f7f5f1;--card:#fff;--ink:#171717;--muted:#6d6a65;--line:#dedad3;--accent:#171717;--accentInk:#fff;--soft:#ece8e1;--danger:#9d2b2b;--ok:#246c4a;--warn:#9a6815;--radius:22px}
+*{box-sizing:border-box}html{background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}body{margin:0;min-height:100vh;background:var(--bg)}button,input,select{font:inherit}button{cursor:pointer}.app{width:min(100%,520px);margin:0 auto;padding:calc(env(safe-area-inset-top) + 18px) 16px calc(env(safe-area-inset-bottom) + 28px)}.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}.brand{font-size:1.02rem;font-weight:900;letter-spacing:.18em}.tag{color:var(--muted);font-size:.78rem}.iconbtn{width:44px;height:44px;border:1px solid var(--line);background:var(--card);border-radius:14px}.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px}.soft{background:var(--soft);border-color:transparent}.eyebrow{font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}h1,h2,h3,p{margin-top:0}.hero{font-size:2rem;line-height:1.05;margin:8px 0 10px}.sub{color:var(--muted);line-height:1.45}.stack{display:grid;gap:12px}.label{display:block;font-size:.82rem;font-weight:700;margin-bottom:7px}.field,.select{width:100%;min-height:48px;border:1px solid var(--line);border-radius:14px;background:var(--card);color:var(--ink);padding:11px 13px;font-size:16px}.timebig{font-size:1.35rem}.btn{min-height:48px;border-radius:15px;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:11px 14px;font-weight:800}.btn.primary{background:var(--accent);color:var(--accentInk);border-color:var(--accent)}.btn.ghost{background:transparent}.btn.full{width:100%}.btnrow{display:flex;gap:8px;flex-wrap:wrap}.btnrow>.btn{flex:1;min-width:100px}.bigcta{min-height:58px;font-size:1.02rem}.metric{text-align:center;padding:18px;border:1px solid var(--line);border-radius:18px;background:var(--card)}.metric .n{font-size:2.5rem;font-weight:900;line-height:1}.screen[hidden]{display:none!important}.routinegrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.routine{text-align:left;min-height:112px}.routine .emoji{font-size:1.45rem}.routine strong{display:block;margin-top:9px}.tiny{font-size:.77rem;color:var(--muted)}.task{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:start;padding:13px 14px;border:1px solid var(--line);border-radius:17px;background:var(--card)}.taskname{font-weight:800}.taskmeta{font-size:.76rem;color:var(--muted);margin-top:4px;line-height:1.4}.remove{width:38px;height:38px;border-radius:12px;border:1px solid var(--line);background:transparent}.divider{height:1px;background:var(--line);margin:3px 0}.quickgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.quick{min-height:68px;padding:8px;font-size:.82rem}.advanced{border:1px solid var(--line);border-radius:16px;overflow:hidden}.advanced summary{cursor:pointer;padding:13px 14px;font-weight:800}.advanced .inside{padding:0 14px 14px}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:10px}.status{text-align:center}.pill{display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border:1px solid var(--line);border-radius:999px;font-size:.8rem}.planitem{padding:13px 14px;border:1px solid var(--line);border-radius:17px;background:var(--card)}.planhead{display:flex;justify-content:space-between;gap:10px}.planitem .running{margin-top:8px;padding:9px 10px;border-radius:12px;background:var(--soft);font-size:.76rem}.wait{border-style:dashed}.drop{border-color:#e6c7a3}.danger{border-color:#e8bcbc}.ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--danger)}.livecard{text-align:center;padding:28px 18px}.liveicon{font-size:2.4rem}.livename{font-size:2.1rem;line-height:1.05;margin:10px 0}.installbox{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:12px 14px calc(env(safe-area-inset-bottom) + 12px);background:rgba(247,245,241,.97);border-top:1px solid var(--line);backdrop-filter:blur(12px)}.installinner{width:min(100%,520px);margin:auto;display:flex;gap:10px;align-items:center}.installinner .text{flex:1;font-size:.8rem}.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:#171717;color:#fff;padding:11px 14px;border-radius:999px;font-size:.82rem;z-index:40;max-width:90%;text-align:center}.modal{position:fixed;inset:0;background:rgba(0,0,0,.42);display:grid;place-items:end center;z-index:50}.modal[hidden]{display:none}.sheet{width:min(100%,520px);max-height:88vh;overflow:auto;background:var(--bg);border-radius:26px 26px 0 0;padding:18px 16px calc(env(safe-area-inset-bottom) + 22px)}.sheethead{display:flex;justify-content:space-between;align-items:center;gap:10px}.close{width:42px;height:42px;border:1px solid var(--line);background:var(--card);border-radius:13px}.savedrow{display:flex;gap:8px}.savedrow .btn:first-child{flex:1;text-align:left}.empty{padding:16px;border:1px dashed var(--line);border-radius:16px;color:var(--muted);font-size:.86rem}.hidden{display:none!important}@media(max-width:380px){.quickgrid{grid-template-columns:1fr 1fr}.routinegrid{grid-template-columns:1fr}.twocol{grid-template-columns:1fr}.hero{font-size:1.75rem}}
+</style>
+</head>
+<body>
+<main class="app">
+  <header class="topbar">
+    <div><div class="brand">BEFORE</div><div class="tag">Make the time fit.</div></div>
+    <button id="helpBtn" class="iconbtn" aria-label="Help and install instructions">?</button>
+  </header>
+
+  <section id="start" class="screen stack">
+    <div class="card soft">
+      <div class="eyebrow">Deadline rescue</div>
+      <h1 class="hero">What happens next?</h1>
+      <p class="sub">Tell BEFORE when you need to be done. It will work backward from there.</p>
+      <label><span class="label">I need to be ready by</span><input id="deadline" class="field timebig" type="time"></label>
+      <div class="metric" style="margin-top:14px"><div class="eyebrow">You have</div><div id="availableBig" class="n">47 MIN</div></div>
+    </div>
+
+    <div>
+      <div class="label">Use a saved BEFORE</div>
+      <div id="savedList" class="stack"></div>
+    </div>
+
+    <div>
+      <div class="label">Or start with one of these</div>
+      <div class="routinegrid">
+        <button class="btn routine" data-template="work"><span class="emoji">☀️</span><strong>Before Work</strong><span class="tiny">A fast morning starter</span></button>
+        <button class="btn routine" data-template="guests"><span class="emoji">🏠</span><strong>Before Guests</strong><span class="tiny">Make the house presentable</span></button>
+        <button class="btn routine" data-template="airport"><span class="emoji">✈️</span><strong>Before Airport</strong><span class="tiny">Leave without forgetting things</span></button>
+        <button class="btn routine" data-template="bed"><span class="emoji">🌙</span><strong>Before Bed</strong><span class="tiny">Close the day quickly</span></button>
+      </div>
+      <button id="blankBtn" class="btn full" style="margin-top:10px">Start blank</button>
+    </div>
+  </section>
+
+  <section id="tasks" class="screen stack" hidden>
+    <div class="topbar" style="margin-bottom:0"><button id="backStart" class="iconbtn" aria-label="Back">←</button><div style="text-align:center"><div class="eyebrow">Build your BEFORE</div><strong id="taskAvailable">47 minutes available</strong></div><button id="saveRoutineBtn" class="iconbtn" aria-label="Save routine">♡</button></div>
+
+    <div class="card soft stack">
+      <label><span class="label">What needs to happen?</span><input id="taskName" class="field" placeholder="e.g. Shower" autocomplete="off"></label>
+      <div class="quickgrid" id="quickPresets">
+        <button class="btn quick" data-q="Shower|10|0">🚿<br>Shower</button><button class="btn quick" data-q="Get dressed|7|0">👕<br>Dress</button><button class="btn quick" data-q="Pack bag|5|0">🎒<br>Pack</button><button class="btn quick" data-q="Charge phone|1|30">🔋<br>Charge</button><button class="btn quick" data-q="Start laundry|3|35">🧺<br>Laundry</button><button class="btn quick" data-q="Feed pet|5|0">🐾<br>Feed pet</button>
+      </div>
+      <div class="twocol"><label><span class="label">Active minutes</span><input id="active" class="field" type="number" min="0" max="240" value="5"></label><label><span class="label">Runs without me</span><input id="passive" class="field" type="number" min="0" max="600" value="0"></label></div>
+      <details class="advanced"><summary>More options</summary><div class="inside stack">
+        <label><span class="label">Priority</span><select id="priority" class="select"><option value="must">Must happen</option><option value="should">Should happen</option><option value="bonus">If there is time</option></select></label>
+        <label><span class="label">By the deadline, this task needs to…</span><select id="finish" class="select"><option value="1">Be completely finished</option><option value="0">Only be started</option></select></label>
+        <label><span class="label">Must happen after</span><select id="dependency" class="select"><option value="">Nothing</option></select></label>
+      </div></details>
+      <button id="addTaskBtn" class="btn primary full">+ Add it</button>
+      <div id="taskError" class="tiny bad hidden"></div>
+    </div>
+
+    <div><div class="topbar" style="margin-bottom:8px"><strong>Your tasks</strong><span id="taskCount" class="tiny"></span></div><div id="taskList" class="stack"></div></div>
+    <button id="makePlanBtn" class="btn primary full bigcta">MAKE MY PLAN</button>
+  </section>
+
+  <section id="plan" class="screen stack" hidden>
+    <div class="topbar" style="margin-bottom:0"><button id="backTasks" class="iconbtn">←</button><div style="text-align:center"><div class="eyebrow">BEFORE</div><strong>Your rescue plan</strong></div><button id="savePlanBtn" class="iconbtn" aria-label="Save routine">♡</button></div>
+    <div id="fitCard" class="card soft status"><div class="eyebrow">Fit engine</div><h2 id="fitTitle" class="hero">You can do this.</h2><p id="fitCopy" class="sub"></p><span id="bufferPill" class="pill"></span></div>
+    <div id="dropCard" class="card drop hidden"><div class="eyebrow">The Drop Line</div><p id="dropCopy" style="margin:6px 0 0"></p></div>
+    <div id="impossibleCard" class="card danger hidden"><div class="eyebrow">True Impossible Mode</div><h3 id="impossibleTitle" style="margin:7px 0"></h3><div id="recoveryIdeas" class="stack"></div></div>
+    <div><div class="label">Optimized sequence</div><div id="planList" class="stack"></div></div>
+    <button id="liveBtn" class="btn primary full bigcta">START LIVE MODE</button>
+  </section>
+
+  <section id="live" class="screen stack" hidden>
+    <div style="text-align:center"><div class="eyebrow">Live rescue mode</div><div id="liveDeadline" class="tiny"></div></div>
+    <div class="card soft livecard"><div class="eyebrow">Do this now</div><div id="liveIcon" class="liveicon">⚡</div><h2 id="liveName" class="livename"></h2><p id="liveMeta" class="sub"></p><div id="unlockNote" class="card hidden" style="margin-top:14px;padding:12px;font-size:.82rem"></div></div>
+    <button id="doneBtn" class="btn primary full bigcta">✓ DONE</button>
+    <button id="changeBtn" class="btn full bigcta">SOMETHING CHANGED</button>
+    <div id="changePanel" class="card hidden"><strong>Reality happened.</strong><p class="sub" style="margin:5px 0 12px">How much time disappeared?</p><div class="btnrow"><button class="btn tax" data-tax="2">+2 min</button><button class="btn tax" data-tax="5">+5 min</button><button class="btn tax" data-tax="10">+10 min</button></div><button id="forgotBtn" class="btn full" style="margin-top:8px">I forgot a task</button></div>
+    <div class="card"><div class="planhead"><span class="tiny">Reality Tax</span><strong id="taxOut">0 min</strong></div><div class="divider"></div><div class="planhead"><span class="tiny">Tasks remaining</span><strong id="remainingOut">0</strong></div><div class="divider"></div><div class="planhead"><span class="tiny">Current buffer</span><strong id="bufferOut">—</strong></div></div>
+  </section>
+
+  <section id="finishScreen" class="screen stack" hidden>
+    <div class="card soft status" style="padding:28px 18px"><div style="font-size:3rem">✓</div><div class="eyebrow">BEFORE complete</div><h2 class="hero">You made the time fit.</h2><p id="finishCopy" class="sub"></p></div><button id="againBtn" class="btn primary full bigcta">BUILD ANOTHER BEFORE</button>
+  </section>
+</main>
+
+<div id="helpModal" class="modal" hidden><div class="sheet"><div class="sheethead"><div><div class="eyebrow">BEFORE Beta 0.1</div><h2 style="margin:4px 0">Install it like an app</h2></div><button id="closeHelp" class="close">×</button></div><div class="stack" style="margin-top:14px"><div class="card"><strong>iPhone / iPad</strong><p class="sub" style="margin:5px 0 0">Open BEFORE in Safari → Share → Add to Home Screen.</p></div><div class="card"><strong>Android</strong><p class="sub" style="margin:5px 0 0">Open BEFORE in Chrome → menu → Install app / Add to Home screen.</p></div><div class="card"><strong>Your data stays local</strong><p class="sub" style="margin:5px 0 0">Saved routines and task history are stored in this browser on this device. BEFORE Beta does not upload them anywhere.</p></div><button id="installBtn" class="btn primary full hidden">INSTALL BEFORE</button><button id="clearDataBtn" class="btn full">Clear saved routines</button></div></div></div>
+<div id="saveModal" class="modal" hidden><div class="sheet"><div class="sheethead"><div><div class="eyebrow">Save this BEFORE</div><h2 style="margin:4px 0">Use it again in seconds</h2></div><button id="closeSave" class="close">×</button></div><div class="stack" style="margin-top:14px"><label><span class="label">Routine name</span><input id="routineName" class="field" placeholder="e.g. Before Work"></label><button id="confirmSave" class="btn primary full">SAVE ROUTINE</button></div></div></div>
+<div id="toast" class="toast hidden" role="status"></div>
+<script>
+(()=>{
+'use strict';
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const screens=['start','tasks','plan','live','finishScreen'];
+let tasks=[],nextId=1,tax=0,completed=new Set(),planState=null,liveQueue=[],deferredInstall=null;
+const STORE='before_beta_01';
+const templates={
+ work:[['Start laundry',3,30,'must',1,[]],['Move laundry to dryer',2,25,'must',1,[1]],['Shower',10,0,'must',1,[]],['Get dressed',7,0,'must',1,[3]],['Pack bag',5,0,'must',1,[]],['Charge phone',1,30,'must',1,[]],['Find keys',3,0,'must',1,[]]],
+ guests:[['Start dishwasher',2,45,'must',0,[]],['Clear counters',8,0,'must',1,[]],['Bathroom reset',7,0,'must',1,[]],['Vacuum main room',10,0,'should',1,[]],['Take trash out',4,0,'should',1,[]],['Finishing touches',3,0,'bonus',1,[]]],
+ airport:[['Charge phone',1,30,'must',1,[]],['Finish packing',12,0,'must',1,[]],['Check travel documents',3,0,'must',1,[]],['Shower',10,0,'should',1,[]],['Get dressed',7,0,'must',1,[4]],['Eat something',10,0,'should',1,[]],['Final room sweep',6,0,'must',1,[]]],
+ bed:[['Start dishwasher',2,45,'should',0,[]],['Set out clothes',5,0,'should',1,[]],['Wash face / brush teeth',8,0,'must',1,[]],['Plug in phone',1,30,'must',0,[]],['Quick kitchen reset',8,0,'bonus',1,[]],['Set alarm',1,0,'must',1,[]]]
+};
+function show(name){screens.forEach(id=>{const el=$('#'+id); if(el)el.hidden=id!==name});scrollTo({top:0,behavior:'smooth'})}
+function esc(s){const d=document.createElement('div');d.textContent=String(s);return d.innerHTML}
+function toast(msg){const el=$('#toast');el.textContent=msg;el.classList.remove('hidden');clearTimeout(toast.t);toast.t=setTimeout(()=>el.classList.add('hidden'),2200)}
+function pad(n){return String(n).padStart(2,'0')}
+function setDefaultDeadline(){const d=new Date(Date.now()+47*60000);$('#deadline').value=pad(d.getHours())+':'+pad(d.getMinutes());updateAvailable()}
+function baseAvailable(){const v=$('#deadline').value;if(!v)return 47;const [h,m]=v.split(':').map(Number),n=new Date(),d=new Date(n);d.setHours(h,m,0,0);if(d<=n)d.setDate(d.getDate()+1);return Math.max(1,Math.round((d-n)/60000))}
+function available(){return Math.max(1,baseAvailable()-tax)}
+function updateAvailable(){$('#availableBig').textContent=baseAvailable()+' MIN';$('#taskAvailable').textContent=available()+' minutes available'}
+function loadStore(){try{return JSON.parse(localStorage.getItem(STORE)||'{}')}catch{return{}}}
+function saveStore(data){localStorage.setItem(STORE,JSON.stringify(data))}
+function getSaved(){const s=loadStore();return Array.isArray(s.routines)?s.routines:[]}
+function setSaved(r){const s=loadStore();s.routines=r;saveStore(s);renderSaved()}
+function renderSaved(){const list=$('#savedList'),saved=getSaved();if(!saved.length){list.innerHTML='<div class="empty">Nothing saved yet. Once you build a routine, tap ♡ and it will appear here.</div>';return}list.innerHTML=saved.map((r,i)=>`<div class="savedrow"><button class="btn" data-loadsaved="${i}"><strong>${esc(r.name)}</strong><div class="tiny">${r.tasks.length} tasks</div></button><button class="btn" data-deletesaved="${i}" aria-label="Delete saved routine">×</button></div>`).join('')}
+function normalizeTemplate(src){const idMap=new Map();let id=1;src.forEach((x,i)=>idMap.set(i+1,id++));return src.map((x,i)=>({id:idMap.get(i+1),name:x[0],active:x[1],passive:x[2],priority:x[3],finish:x[4],deps:(x[5]||[]).map(d=>idMap.get(d)).filter(Boolean)}))}
+function startTemplate(name){tasks=normalizeTemplate(templates[name]);nextId=Math.max(0,...tasks.map(t=>t.id))+1;tax=0;completed.clear();renderTasks();show('tasks');updateAvailable()}
+function startBlank(){tasks=[];nextId=1;tax=0;completed.clear();renderTasks();show('tasks');updateAvailable()}
+function renderDeps(){const d=$('#dependency');d.innerHTML='<option value="">Nothing</option>'+tasks.map(t=>`<option value="${t.id}">${esc(t.name)}</option>`).join('')}
+function renderTasks(){
+ $('#taskCount').textContent=tasks.length+' task'+(tasks.length===1?'':'s');
+ $('#taskList').innerHTML=tasks.length?tasks.map(t=>`<div class="task"><div><div class="taskname">${esc(t.name)}</div><div class="taskmeta">${t.active} active${t.passive?' + '+t.passive+' running':''} · ${t.priority==='must'?'Must':t.priority==='should'?'Should':'If time'} · ${t.finish?'finish':'start'} by deadline${t.deps.length?' · after '+t.deps.map(id=>esc(tasks.find(x=>x.id===id)?.name||'task')).join(', '):''}</div></div><button class="remove" data-remove="${t.id}" aria-label="Remove ${esc(t.name)}">×</button></div>`).join(''):'<div class="empty">Add the things that need to happen. BEFORE will do the unpleasant arithmetic.</div>';
+ renderDeps();
+}
+function addTask(){const name=$('#taskName').value.trim(),err=$('#taskError');err.classList.add('hidden');if(!name){err.textContent='Give the task a name first.';err.classList.remove('hidden');return}const dep=$('#dependency').value;tasks.push({id:nextId++,name,active:Math.max(0,+$('#active').value||0),passive:Math.max(0,+$('#passive').value||0),priority:$('#priority').value,finish:$('#finish').value==='1'?1:0,deps:dep?[+dep]:[]});$('#taskName').value='';$('#active').value=5;$('#passive').value=0;$('#dependency').value='';renderTasks();$('#taskName').focus()}
+function kids(A){const m=new Map(A.map(t=>[t.id,[]]));A.forEach(t=>t.deps.forEach(d=>m.has(d)&&m.get(d).push(t.id)));return m}
+function hasCycle(A){const map=new Map(A.map(t=>[t.id,t])),vis=new Set(),done=new Set();function dfs(id){if(vis.has(id))return true;if(done.has(id))return false;vis.add(id);const t=map.get(id);if(t)for(const d of t.deps)if(map.has(d)&&dfs(d))return true;vis.delete(id);done.add(id);return false}return A.some(t=>dfs(t.id))}
+function critical(A){const map=new Map(A.map(t=>[t.id,t])),children=kids(A),memo=new Map();function f(id){if(memo.has(id))return memo.get(id);const t=map.get(id),c=children.get(id)||[],tail=c.length?Math.max(...c.map(f)):0,val=t.active+t.passive+tail;memo.set(id,val);return val}A.forEach(t=>f(t.id));return{map,children,memo}}
+function schedule(A){
+ const {map,children,memo}=critical(A),remaining=new Set(A.map(t=>t.id)),doneAt=new Map(),events=[];let time=0,guard=0;
+ while(remaining.size&&guard++<800){
+  let ready=[...remaining].map(id=>map.get(id)).filter(t=>t.deps.every(d=>!map.has(d)||(doneAt.has(d)&&doneAt.get(d)<=time)));
+  if(!ready.length){const waits=[];[...remaining].forEach(id=>map.get(id).deps.forEach(d=>doneAt.has(d)&&doneAt.get(d)>time&&waits.push(doneAt.get(d))));if(!waits.length)return{error:'Dependency problem'};const z=Math.min(...waits);events.push({wait:true,start:time,end:z});time=z;continue}
+  const unlocks=[];doneAt.forEach((ct,id)=>{if(ct>time&&(children.get(id)||[]).some(c=>remaining.has(c)))unlocks.push(ct)});const nextUnlock=unlocks.length?Math.min(...unlocks):Infinity,gap=nextUnlock-time;
+  const score=t=>(memo.get(t.id)||0)*12+t.passive*3+(t.priority==='must'?10:t.priority==='should'?4:0)+(t.active<=gap?90:0)-Math.max(0,t.active-gap)*45;
+  const fitting=ready.filter(t=>t.active<=gap);let pick=(fitting.length?fitting:ready).sort((a,b)=>score(b)-score(a))[0];
+  if(gap<Infinity&&!fitting.length&&gap<=5){events.push({wait:true,start:time,end:nextUnlock});time=nextUnlock;continue}
+  const ev={task:pick,start:time,activeEnd:time+pick.active,done:time+pick.active+pick.passive};events.push(ev);doneAt.set(pick.id,ev.done);remaining.delete(pick.id);time=ev.activeEnd;
+ }
+ let total=time;A.forEach(t=>{const e=events.find(x=>x.task&&x.task.id===t.id);if(e&&t.finish)total=Math.max(total,e.done)});return{events,total}
+}
+function descendants(id,A){const c=kids(A),out=new Set([id]),q=[id];while(q.length)(c.get(q.shift())||[]).forEach(x=>{if(!out.has(x)){out.add(x);q.push(x)}});return out}
+function fit(A,avail){let included=A.map(t=>({...t,deps:[...t.deps]})),dropped=[],result=schedule(included);while(!result.error&&result.total>avail){const opts=[];included.filter(t=>t.priority!=='must').forEach(t=>{const chain=descendants(t.id,included),group=included.filter(x=>chain.has(x.id));if(group.some(x=>x.priority==='must'))return;const next=included.filter(x=>!chain.has(x.id)).map(x=>({...x,deps:x.deps.filter(d=>!chain.has(d))})),r=schedule(next);if(!r.error)opts.push({group,next,r,tier:group.some(x=>x.priority==='should')?1:0,save:result.total-r.total})});if(!opts.length)break;opts.sort((a,b)=>a.tier-b.tier||b.save-a.save);const p=opts[0];dropped.push(...p.group.filter(x=>!dropped.some(y=>y.id===x.id)));included=p.next;result=p.r}return{included,dropped,result,impossible:!result.error&&result.total>avail}}
+function offsetClock(min){const d=new Date(Date.now()+min*60000);return d.toLocaleTimeString([],{hour:'numeric',minute:'2-digit'})}
+function makePlan(){
+ const err=$('#taskError');err.classList.add('hidden');if(!tasks.length){toast('Add at least one task first.');return}if(hasCycle(tasks)){toast('Those task dependencies form a loop.');return}
+ planState=fit(tasks.filter(t=>!completed.has(t.id)),available());const r=planState.result;if(r.error){toast(r.error);return}const buf=available()-r.total;
+ $('#fitTitle').textContent=planState.impossible?'You need '+Math.abs(buf)+' minutes back.':planState.dropped.length?'It fits after a sacrifice.':'You can do this.';
+ $('#fitCopy').textContent=planState.impossible?'Your Must tasks cannot all finish inside the remaining window.':`${r.total} elapsed minutes fit inside ${available()} available.`;$('#bufferPill').textContent=buf>=0?buf+' min buffer':Math.abs(buf)+' min over capacity';
+ $('#dropCard').classList.toggle('hidden',!planState.dropped.length&&!planState.impossible);$('#dropCopy').innerHTML=planState.dropped.length?`BEFORE moved <strong>${planState.dropped.map(x=>esc(x.name)).join(', ')}</strong> below the Drop Line.`:planState.impossible?'No optional task remains to remove.':'';
+ $('#impossibleCard').classList.toggle('hidden',!planState.impossible);if(planState.impossible){const over=Math.abs(buf);$('#impossibleTitle').textContent='Get '+over+' minutes back.';const ideas=planState.included.filter(t=>t.active>2).sort((a,b)=>b.active-a.active).slice(0,2).map(t=>'Shorten “'+t.name+'”');ideas.push('Move the deadline later by '+over+' min');$('#recoveryIdeas').innerHTML=ideas.map(x=>`<div class="pill">${esc(x)}</div>`).join('')}
+ $('#planList').innerHTML=r.events.map(e=>e.wait?`<div class="planitem wait"><strong>Protect the unlock.</strong><div class="taskmeta">Wait ${e.end-e.start} min rather than starting something that spills across it.</div></div>`:`<div class="planitem"><div class="planhead"><div><strong>${esc(e.task.name)}</strong><div class="taskmeta">${e.task.active} active${e.task.passive?' + '+e.task.passive+' running':''}</div></div><div style="text-align:right"><strong>${offsetClock(e.start)}</strong><div class="tiny">start</div></div></div>${e.task.passive?`<div class="running">Runs on its own until about ${offsetClock(e.done)}.</div>`:''}</div>`).join('');
+ show('plan')
+}
+function saveCurrent(){if(!tasks.length){toast('Add some tasks first.');return}$('#routineName').value='';$('#saveModal').hidden=false;setTimeout(()=>$('#routineName').focus(),50)}
+function confirmSave(){const name=$('#routineName').value.trim();if(!name){toast('Name the routine first.');return}const saved=getSaved();saved.unshift({name,tasks:tasks.map(t=>({...t,deps:[...t.deps]})),savedAt:Date.now()});setSaved(saved.slice(0,12));$('#saveModal').hidden=true;toast('Saved. Future-you says thanks.')}
+function loadSaved(i){const r=getSaved()[i];if(!r)return;tasks=r.tasks.map(t=>({...t,deps:[...t.deps]}));nextId=Math.max(0,...tasks.map(t=>t.id))+1;tax=0;completed.clear();renderTasks();show('tasks');updateAvailable()}
+function prepareLive(){if(!planState)makePlan();if(!planState)return;liveQueue=planState.result.events.filter(e=>e.task).map(e=>e.task.id);renderLive();show('live')}
+function rebuildLive(){const rem=tasks.filter(t=>!completed.has(t.id));if(!rem.length){finish();return}planState=fit(rem,available());liveQueue=planState.result.events.filter(e=>e.task).map(e=>e.task.id);renderLive()}
+function renderLive(){const remaining=tasks.filter(t=>!completed.has(t.id));if(!remaining.length||!liveQueue.length){finish();return}const id=liveQueue.find(x=>!completed.has(x)),t=tasks.find(x=>x.id===id);if(!t){rebuildLive();return}$('#liveDeadline').textContent='Deadline in about '+available()+' minutes';$('#liveName').textContent=t.name;$('#liveMeta').textContent=t.active+' min active'+(t.passive?' + '+t.passive+' min running on its own':'');const deps=remaining.filter(x=>x.deps.includes(t.id));const note=$('#unlockNote');note.classList.toggle('hidden',!t.passive&&!deps.length);note.textContent=t.passive?(deps.length?`This unlocks ${deps.map(x=>x.name).join(', ')} when it finishes.`:'Start this early so the running time happens in the background.'):(deps.length?`Finish this to unlock ${deps.map(x=>x.name).join(', ')}.`:'');$('#taxOut').textContent=tax+' min';$('#remainingOut').textContent=remaining.length;const b=planState?available()-planState.result.total:0;$('#bufferOut').textContent=b>=0?b+' min':'-'+Math.abs(b)+' min'}
+function finish(){$('#finishCopy').textContent=tax?`Reality Tax paid: ${tax} minutes. BEFORE kept rebuilding around it.`:'Everything in this BEFORE is complete.';show('finishScreen')}
+function addTax(n){tax+=n;updateAvailable();$('#changePanel').classList.add('hidden');rebuildLive()}
+function resetAll(){tasks=[];tax=0;completed.clear();planState=null;liveQueue=[];nextId=1;setDefaultDeadline();renderSaved();show('start')}
+
+$$('[data-template]').forEach(b=>b.addEventListener('click',()=>startTemplate(b.dataset.template)));$('#blankBtn').addEventListener('click',startBlank);$('#backStart').addEventListener('click',()=>show('start'));$('#backTasks').addEventListener('click',()=>show('tasks'));$('#addTaskBtn').addEventListener('click',addTask);$('#taskName').addEventListener('keydown',e=>{if(e.key==='Enter')addTask()});$$('[data-q]').forEach(b=>b.addEventListener('click',()=>{const [n,a,p]=b.dataset.q.split('|');$('#taskName').value=n;$('#active').value=a;$('#passive').value=p;$('#taskName').focus()}));$('#taskList').addEventListener('click',e=>{const b=e.target.closest('[data-remove]');if(!b)return;const id=+b.dataset.remove;tasks=tasks.filter(t=>t.id!==id).map(t=>({...t,deps:t.deps.filter(d=>d!==id)}));renderTasks()});$('#makePlanBtn').addEventListener('click',makePlan);$('#liveBtn').addEventListener('click',prepareLive);$('#doneBtn').addEventListener('click',()=>{const id=liveQueue.find(x=>!completed.has(x));if(id)completed.add(id);rebuildLive()});$('#changeBtn').addEventListener('click',()=>$('#changePanel').classList.toggle('hidden'));$$('.tax').forEach(b=>b.addEventListener('click',()=>addTax(+b.dataset.tax)));$('#forgotBtn').addEventListener('click',()=>show('tasks'));$('#againBtn').addEventListener('click',resetAll);$('#deadline').addEventListener('change',updateAvailable);$('#saveRoutineBtn').addEventListener('click',saveCurrent);$('#savePlanBtn').addEventListener('click',saveCurrent);$('#closeSave').addEventListener('click',()=>$('#saveModal').hidden=true);$('#confirmSave').addEventListener('click',confirmSave);$('#helpBtn').addEventListener('click',()=>$('#helpModal').hidden=false);$('#closeHelp').addEventListener('click',()=>$('#helpModal').hidden=true);$('#clearDataBtn').addEventListener('click',()=>{if(confirm('Clear all saved BEFORE routines on this device?')){localStorage.removeItem(STORE);renderSaved();toast('Saved routines cleared.')}});$('#savedList').addEventListener('click',e=>{const l=e.target.closest('[data-loadsaved]');if(l)loadSaved(+l.dataset.loadsaved);const d=e.target.closest('[data-deletesaved]');if(d){const a=getSaved();a.splice(+d.dataset.deletesaved,1);setSaved(a)}});
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredInstall=e;$('#installBtn').classList.remove('hidden')});$('#installBtn').addEventListener('click',async()=>{if(!deferredInstall)return;deferredInstall.prompt();await deferredInstall.userChoice;deferredInstall=null;$('#installBtn').classList.add('hidden')});
+if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js').catch(()=>{}));
+setDefaultDeadline();renderSaved();renderTasks();
+})();
+</script>
+</body>
+</html>
