@@ -1,14 +1,24 @@
 {
-  "name": "Taskchemy — Turn task chaos into time",
-  "short_name": "Taskchemy",
-  "description": "A deadline rescue app that turns task chaos into the smartest possible plan for the time you have.",
+  "name": "The Squeeze - Project management for your personal life",
+  "short_name": "The Squeeze",
+  "description": "Project management for your personal life. Dump the lemons, set the finish line, and The Squeeze finds what to do first, what can overlap, and how to replan when life gets tight.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#fbf8ff",
-  "theme_color": "#6f4aa2",
+  "background_color": "#fffdf3",
+  "theme_color": "#d8ae16",
   "icons": [
-    {"src":"icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
-    {"src":"icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
   ]
 }
