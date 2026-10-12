@@ -1,7 +1,7 @@
 {
   "name": "The Squeeze - Project management for your personal life",
   "short_name": "The Squeeze",
-  "description": "Project management for your personal life. Save recurring Squeezes, choose today’s finish time, and get a smart sequence that overlaps background work, guides execution, and replans when life changes.",
+  "description": "Project management for your personal life. Save recurring Squeezes, choose a finish time, overlap background work, guide execution, and plan errands with zero-cost local travel estimates plus Maps/Waze handoff.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
